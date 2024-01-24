@@ -1,76 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Bostons Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston's Portfolio</title>
+    <link rel="icon" type="image/png" href="https://logos-world.net/wp-content/uploads/2020/05/Boston-Bruins-Logo-1934-1949.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: url('https://media4.giphy.com/media/V4NSR1NG2p0KeJJyr5/giphy.gif') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+            position: relative;
+        }
+
+        header h1,
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        #introduction {
+            margin-bottom: 2em;
+        }
+
+        #portfolio-links {
+            margin-top: 1em;
+        }
+
+        #portfolio-links a {
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        #what-ive-learned {
+            margin-top: 1em;
+        }
+
+        #what-ive-learned img {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 1em;
+        }
+
+        #contact {
+            margin-top: 1em;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact label,
+        #contact input,
+        #contact textarea {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>Bostons Portfolio</h1>
-<p>A website created by Boston Dolter</p>
+    <header>
+        <h1>Boston Dolter</h1>
+        <p>AKA "Chicago"</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#bookmarks">Useful Bookmarks and Tools</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#what-ive-learned">What I've Learned</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p id="introduction">Hi, I'm Boston Dolter. Welcome to my portfolio website for Mr. Jamieson's grade 11 Computer Science class! Click on the links under "Portfolio" to see my projects and work from the 2023-2024 school year.</p>
+        </section>
+
+        <section id="bookmarks">
+            <h2>Useful Bookmarks and Tools</h2>
+
+            <p>Bookmark 1: <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></p>
+            <p>Bookmark 2: <a href="https://sites.google.com/ocsb.ca/jamieson-ics/home" target="_blank">Jamieson's Computer Science Class</a></p>
+            <p>Bookmark 3: <a href="https://ash.ocsb.ca/" target="_blank">All Saints' Catholic High School</a></p>
+            <p>Bookmark 4: <a href="https://www.ocsb.ca/parents/calendar/" target="_blank">OCSB Calendar</a></p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+
+            <div id="portfolio-links">
+                <a href="https://replit.com/@ics3u-sem-1/Budget-BostonDolter" target="_blank">Budget Calculator</a>
+                <p>Description: This program is going to display a person's budget for the month. The user will input realistic random values for the following budget items: Food, Clothing, Entertainment, Rent</p>
+
+                <a href="https://replit.com/@ics3u-sem-1/02-Practice-If-and-Strings-BostonDolter" target="_blank">Calculating the Discriminant</a>
+                <p>Description: This application determines the discriminant.</p>
+
+                <a href="https://replit.com/@BostonDolter/HangMan" target="_blank">HangMan</a>
+                <p>Description: In this application, the user will have to guess the secret word with a maximum of 6 wrong guesses before you lose.</p>
+
+                <a href="https://replit.com/@BostonDolter/Guess-the-Number-OverUnder" target="_blank">Guess the Number. (OverUnder)</a>
+                <p>Description: The program will pick a random number 1-1000, and the user will have to guess what the secret number is. If the guess is too high, it will say "too high", if the guess is too low, it will say "too low". This slowly narrows the secret number down until the user guesses it.</p>
+            </div>
+        </section>
+
+        <section id="what-ive-learned">
+            <h2>What I've Learned</h2>
+            <p>Here are some of the skills I have developed and learned in this class:</p>
+            <ul>
+                <li>How to program using Python and HTML</li>
+                <li>How to create a website</li>
+                <li>Problem Solving</li>
+            </ul>
+            <img src="https://media0.giphy.com/media/aEG9ByjIfupJXakkac/200w.webp?cid=ecf05e47518c1ehu8rt2du30mmqzj0kgkzks7cp9q1cd10ni&ep=v1_gifs_search&rid=200w.webp&ct=g" alt="Learned Skill 1">
+            <img src="https://media1.giphy.com/media/3oEjI105rmEC22CJFK/200.webp?cid=ecf05e47nea5jomqv4rjjbtz1av56pfo7egx3h1s92a52gac&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Learned Skill 2">
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions about anything, use the form below to contact me:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
 </body>
+
 </html>
-<style>
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-</style>
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
